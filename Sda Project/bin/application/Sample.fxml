@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #000000;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
+   <children>
+      <AnchorPane layoutX="283.0" layoutY="54.0" prefHeight="292.0" prefWidth="293.0">
+         <children>
+            <Button fx:id="b1" layoutX="36.0" layoutY="25.0" mnemonicParsing="false" onAction="#switchToAdmin" prefHeight="47.0" prefWidth="224.0" styleClass="fancy-button" text="Admin">
+               <font>
+                  <Font name="Arial Bold" size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="b2" layoutX="36.0" layoutY="88.0" mnemonicParsing="false" onAction="#switchToTrainer" prefHeight="47.0" prefWidth="224.0" styleClass="fancy-button" text="Trainer">
+               <font>
+                  <Font name="Arial Bold" size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="b3" layoutX="36.0" layoutY="149.0" mnemonicParsing="false" onAction="#switchToReception" prefHeight="47.0" prefWidth="224.0" styleClass="fancy-button" text="Receptionist">
+               <font>
+                  <Font name="Arial Bold" size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="b4" layoutX="36.0" layoutY="210.0" mnemonicParsing="false" onAction="#switchToShopkeeper" prefHeight="47.0" prefWidth="224.0" styleClass="fancy-button" text="Shopkeeper">
+               <font>
+                  <Font name="Arial Bold" size="16.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="232.0" fitWidth="216.0" layoutX="67.0" layoutY="84.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../resources/logo(normal1).png" />
+         </image>
+      </ImageView>
+   </children>
+</Pane>

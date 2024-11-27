@@ -1,0 +1,44 @@
+
+.sidebarItem:hover {
+    -fx-border-color: #000000;
+    -fx-border-width: 0px 0px 0px 3px;
+    -fx-background-color: #ffffff; 
+    -fx-text-fill: #000000;
+}
+
+.dashBoard:hover {
+    -fx-border-color: #d02604;
+    -fx-border-width: 0px 0px 3px 0px;
+    -fx-background-color: #ffffff; 
+    -fx-text-fill: #d02604;
+}
+
+.manageButtons {
+    -fx-background-color: #d02604;
+    -fx-text-fill: #ffffff; 
+    -fx-font-weight: bold; 
+    -fx-background-radius: 5px; 
+    -fx-padding: 10px 20px;
+}
+
+.manageButtons:hover {
+    -fx-background-color: #000000;
+    -fx-text-fill: #d02604;
+    -fx-border-color: #d02604;
+    -fx-border-width: 0px 0px 0px 3px; 
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, 0, 0); 
+}
+
+.fancy-button {
+    -fx-background-color: linear-gradient(#ff5400, #be1d00);
+    -fx-background-radius: 30;
+    -fx-text-fill: white;
+    -fx-font-size: 16px;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.75), 5, 0.0, 0, 1);
+}
+
+.fancy-button:hover {
+    -fx-background-color: linear-gradient(#ff8c00, #ff5400);
+    -fx-text-fill: #ffffff;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.75), 10, 0.0, 0, 2);
+}

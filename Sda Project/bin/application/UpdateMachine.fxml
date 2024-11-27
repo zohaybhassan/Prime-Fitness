@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #000000;" stylesheets="@application.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
+   <children>
+      <BorderPane prefHeight="400.0" prefWidth="607.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <top>
+            <AnchorPane prefHeight="65.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Pane prefHeight="25.0" prefWidth="200.0" style="-fx-background-color: #d02604;" AnchorPane.bottomAnchor="40.800000000000004" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <Label layoutX="249.0" layoutY="3.0" text="PRIME FITNESS">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="21.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../resources/logo(black).png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Button layoutX="249.0" layoutY="26.0" mnemonicParsing="false" onAction="#Admin" prefHeight="40.0" prefWidth="347.0" style="-fx-background-color: 000000;" styleClass="dashBoard" stylesheets="@application.css" text="DASHBOARD" textFill="#d02604" AnchorPane.bottomAnchor="0.4000000000000057" AnchorPane.leftAnchor="180.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="26.0">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="21.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../resources/home.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="MenuBack" layoutX="9.0" layoutY="30.0" mnemonicParsing="false" onAction="#show" style="-fx-background-color: 000000;" text="MENU" textFill="#d02604">
+                     <graphic>
+                        <ImageView fitHeight="21.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../resources/menu.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="Impact" size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="Menu" layoutX="9.0" layoutY="30.0" mnemonicParsing="false" onAction="#hide" style="-fx-background-color: 000000;" text="MENU" textFill="#d02604">
+                     <graphic>
+                        <ImageView fitHeight="21.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../resources/menu.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="Impact" size="18.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </top>
+         <left>
+            <AnchorPane fx:id="slider" prefHeight="362.0" prefWidth="180.0" style="-fx-background-color: #d02604;" BorderPane.alignment="CENTER">
+               <children>
+                  <VBox prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="53.0">
+                     <children>
+                        <Button mnemonicParsing="false" onAction="#switchToHandleMachines" prefHeight="38.0" prefWidth="180.0" style="-fx-background-color: #d02604;" styleClass="sidebarItem" stylesheets="@application.css" text="HANDLE MACHINES">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Button>
+                        <Button mnemonicParsing="false" onAction="#switchToManageStaff" prefHeight="38.0" prefWidth="180.0" style="-fx-background-color: #d02604;" styleClass="sidebarItem" stylesheets="@application.css" text="MANAGE STAFF">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Button>
+                        <Button mnemonicParsing="false" onAction="#switchToRepairMachine" prefHeight="38.0" prefWidth="180.0" style="-fx-background-color: #d02604;" styleClass="sidebarItem" stylesheets="@application.css" text="REPAIR MACHINE">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+         </left>
+         <center>
+            <AnchorPane fx:id="logoPane" prefHeight="341.0" prefWidth="420.0">
+               <children>
+                  <Pane prefHeight="200.0" prefWidth="400.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <Label layoutX="130.0" layoutY="14.0" text="UPDATE MACHINE" textFill="#d02604">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <Line endX="79.50390625" endY="7.62939453125E-6" layoutX="210.0" layoutY="41.0" startX="-80.0" startY="7.62939453125E-6" stroke="#d02604" strokeWidth="3.0" />
+                        <Label layoutX="13.0" layoutY="48.0" text="Name" textFill="#d02604">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="213.0" layoutY="48.0" text="Quantity" textFill="#d02604">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="14.0" layoutY="115.0" text="Buying Date" textFill="#d02604">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="uMachineName" layoutX="13.0" layoutY="72.0" prefHeight="25.0" prefWidth="160.0" style="-fx-background-color: #000000; -fx-border-color: #d02604;" />
+                        <TextField fx:id="uMachineQuantity" layoutX="213.0" layoutY="72.0" prefHeight="25.0" prefWidth="160.0" style="-fx-background-color: #000000; -fx-border-color: #d02604;" />
+                        <Button layoutX="134.0" layoutY="196.0" mnemonicParsing="false" onAction="#updateMachine" styleClass="manageButtons" stylesheets="@application.css" text="UPDATE MACHINE">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Button>
+                        <DatePicker fx:id="uMachineBuyDate" layoutX="13.0" layoutY="142.0" prefHeight="25.0" prefWidth="160.0" style="-fx-border-color: #d02604;" />
+                        <Label fx:id="error3" layoutX="141.0" layoutY="179.0" textFill="#d02604" />
+                     </children>
+                  </Pane>
+               </children>
+            </AnchorPane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>
