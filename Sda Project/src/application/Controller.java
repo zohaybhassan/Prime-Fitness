@@ -1067,7 +1067,7 @@ public class Controller implements Initializable {
 		}
 		return found;
 	}
-    //for addMAchine
+    // ADD MACHINE
     @FXML
     private Label Error;
     
